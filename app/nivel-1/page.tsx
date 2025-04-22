@@ -22,7 +22,6 @@ export default function Nivel1() {
   const [insight, setInsight] = useState("");
 
   useEffect(() => {
-    // Load saved insight
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem("insight-nivel-1");
       if (saved) setInsight(saved);

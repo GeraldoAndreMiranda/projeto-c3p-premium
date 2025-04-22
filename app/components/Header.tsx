@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Home, BarChart2, BookOpen, MessageCircle } from 'lucide-react';
+import { Home, BarChart2, BookOpen, MessageCircle, Sparkles } from 'lucide-react';
 
 export default function Header() {
   return (
@@ -29,6 +29,13 @@ export default function Header() {
             >
               <BookOpen className="h-5 w-5" />
               <span>Ciclo 21 Dias</span>
+            </Link>
+            <Link 
+              href="/sabedoria" 
+              className="flex items-center space-x-1 text-gray-700 hover:text-blue-600"
+            >
+              <Sparkles className="h-5 w-5" />
+              <span>Sabedoria</span>
             </Link>
             <a 
               href="https://wa.me/your-number" 
