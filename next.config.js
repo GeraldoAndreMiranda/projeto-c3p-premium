@@ -1,11 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  transpilePackages: ['undici'],
-  output: 'export',
+  transpilePackages: ['@firebase/storage'],
+  experimental: {
+    esmExternals: false
+  },
   images: {
     unoptimized: true
   },
-  swcMinify: false
+  output: 'export'
 };
 
 module.exports = nextConfig;
